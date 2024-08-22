@@ -76,7 +76,7 @@ end
 
 % STEP e: Plotting spectrum vs phi & theta (deg)
 figure;
-mesh(theta, phi, 1./res);
+mesh(theta, phi, res);
 xlabel('Elevation(°)');
 ylabel('Azimuth(°)');
 zlabel('Norm^2');
@@ -221,5 +221,6 @@ for i = 1:size(LocSrchP, 1)
     end
     SrchedPnt(i, :) = crtPnt;
 end
+% Step h
 
 
